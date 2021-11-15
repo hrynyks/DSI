@@ -1,0 +1,57 @@
+.welcome {
+    padding: 57px 0 63px;
+    background-color: #F7F7F7;
+
+    &-wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+
+        @include a (tablet-xl) {
+            flex-direction: column;
+            gap: 40px;
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        max-width: 520px;
+        width: 100%;
+
+        @include a (tablet-xl) {
+            order: -1;
+
+        }
+    }
+
+    &__title {
+        font-size: toRem(32);
+        line-height: 133.69%;
+        font-weight: 500;
+        color: #1F2E35;
+
+        @include a (tablet-xl) {
+            text-align: center;
+        }
+
+        &-span {
+            color: $main-color;
+        }
+    }
+
+    &__descr {
+        line-height: 150%;
+        color: #30444E;
+
+        @include a (tablet-xl) {
+            text-align: center;
+        }
+
+        &-span {
+            color: $main-color;
+        }
+    }
+}
