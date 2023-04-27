@@ -1,0 +1,127 @@
+.footer {
+
+    &-wrap {
+        display: flex;
+        align-items: center;
+        gap: 47px;
+        padding: 20px 0;
+
+        @include a (tablet-xl) {
+            justify-content: center;
+            gap: 100px;
+        }
+
+        @include a (tablet) {
+            flex-direction: column;
+            gap: 30px;
+        }
+    }
+
+    &-left {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        max-width: 310px;
+        width: 100%;
+
+        @include a (tablet-xl) {
+            align-items: center;
+        }
+    }
+
+    &__span {
+        font-weight: 500;
+        color: #263238;
+
+        @include a (tablet-xl) {
+            font-size: 16px;
+        }
+
+        @include a (mobile) {
+            font-size: 14px;
+        }
+    }
+
+    &__adress {
+        font-weight: 300;
+        line-height: 149.19%;
+        color: #263238;
+
+        @include a (tablet-xl) {
+            text-align: center;
+            font-size: 16px;
+        }
+
+
+        @include a (mobile) {
+            font-size: 14px;
+        }
+    }
+
+    &-right {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+        @include a (tablet-xl) {
+            align-items: center;
+        }
+    }
+
+    &__title {
+        font-size: 24px;
+        font-weight: 500;
+        color: #263238;
+
+        @include a (tablet-xl) {
+            font-size: 20px;
+        }
+
+        @include a (mobile) {
+            font-size: 16px;
+        }
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        font-weight: 300;
+        color: #263238;
+
+        @include a (tablet-xl) {
+            align-items: center;
+        }
+    }
+
+    &__link {
+        color: #263238;
+
+        @include a (tablet-xl) {
+            font-size: 16px;
+        }
+
+        @include a (mobile) {
+            font-size: 14px;
+        }
+
+        &:hover {
+            color: $main-color;
+        }
+    }
+
+    &__copyright {
+        padding: 22px 0;
+        background-color: $main-color;
+        color: #fff;
+        text-align: center;
+
+        @include a (tablet-xl) {
+            font-size: 16px;
+        }
+
+        @include a (mobile) {
+            font-size: 14px;
+        }
+    }
+}

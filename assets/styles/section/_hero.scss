@@ -1,0 +1,97 @@
+.hero {
+    padding: 100px 0 160px;
+
+    @include a (tablet-xl) {
+        padding: 75px 0;
+    }
+
+    @include a (mobile) {
+        padding: 50px 0;
+    }
+
+    &-wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @include a (tablet-xl) {
+            flex-direction: column;
+            gap: 20px;
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+
+        @include a (tablet-xl) {
+            align-items: center;
+        }
+    }
+
+    &__title {
+        font-size: 48px;
+        line-height: 133.69%;
+        color: #1F2E35;
+        max-width: 545px;
+        width: 100%;
+
+        @include a (tablet-xl) {
+            text-align: center;
+            font-size: 30px;
+        }
+
+        @include a (mobile) {
+            font-size: 20px;
+            line-height: 120%;
+        }
+
+        &-span {
+            color: $main-color;
+        }
+    }
+
+    &__descr {
+        font-size: 20px;
+        line-height: 29px;
+        color: #30444E;
+        max-width: 520px;
+        width: 100%;
+
+        @include a (tablet-xl) {
+            text-align: center;
+            font-size: 16px;
+        }
+
+        @include a (mobile) {
+            font-size: 12px;
+            line-height: 18px;
+        }
+    }
+
+    &__btn {
+        font-size: 20px;
+        color: #fff;
+        width: 161px;
+        height: 53px;
+        background-color: $main-color;
+        box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 4px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &:hover {
+            background-color: #1F2E35;
+            color: $main-color;
+        }
+
+        @include a (mobile) {
+            width: 100px;
+            height: 40px;
+            font-size: 16px;
+        }
+    }
+}

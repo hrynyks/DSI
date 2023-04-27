@@ -1,0 +1,125 @@
+.services {
+    padding: 100px 0;
+
+    @include a (tablet) {
+        padding: 50px 0;
+    }
+
+    &__title {
+        font-size: 32px;
+        font-weight: 500;
+        text-align: center;
+        color: #1F2E35;
+        margin-bottom: 41px;
+
+        @include a (tablet-xl) {
+
+            @include a (tablet-xl) {
+                font-size: 24px;
+            }
+
+            @include a (mobile) {
+                font-size: 20px;
+            }
+        }
+    }
+
+    &__items {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+
+        @include a (tablet-xl) {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    &__item {
+        max-width: 329px;
+        width: 100%;
+        line-height: 150%;
+        color: #30444E;
+        padding-top: 116px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        position: relative;
+
+        @include a (tablet-xl) {
+            align-items: center;
+        }
+
+        &-1 {
+            max-width: 319px;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            top: 0;
+
+            @include a (tablet) {
+                transform: scale(0.7)
+            }
+        }
+
+        &-1::before {
+            background: url(../../assets/images/services-item-1.png);
+        }
+
+        &-2::before {
+            background: url(../../assets/images/services-item-2.png);
+        }
+
+        &-3::before {
+            background: url(../../assets/images/services-item-3.png);
+        }
+
+        &-title {
+            font-size: 28px;
+            font-weight: 500;
+            color: $main-color;
+
+
+            @include a (tablet-xl) {
+                font-size: 24px;
+            }
+
+            @include a (mobile) {
+                font-size: 20px;
+            }
+        }
+
+        &-descr {
+            line-height: 150%;
+            color: #30444E;
+
+            @include a (tablet-xl) {
+                text-align: center;
+                font-size: 16px;
+            }
+
+            @include a (mobile) {
+                font-size: 12px;
+            }
+        }
+
+        &-btn {
+            width: 119px;
+            line-height: 42px;
+            color: #fff;
+            background-color: $main-color;
+            text-align: center;
+            box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
+            border-radius: 4px;
+
+            &:hover {
+                background-color: #1F2E35;
+                color: $main-color;
+            }
+        }
+    }
+}
